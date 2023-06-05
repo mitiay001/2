@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Запись на прием</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Запись на прием</h1>
+  
+  <form id="appointmentForm">
+    <label for="name">Имя:</label>
+    <input type="text" id="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+
+    <label for="phone">Телефон:</label>
+    <input type="tel" id="phone" required>
+
+    <label for="date">Дата и время:</label>
+    <input type="datetime-local" id="date" required>
+
+    <input type="submit" value="Записаться">
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
