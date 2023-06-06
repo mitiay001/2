@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Запись на прием</title>
-  <link rel="stylesheet" type="text/css" href="zapis.css">
+  <title>Парикмахерская</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-  <h1>Запись на прием</h1>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Лого парикмахерской">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#appointment">Запись на стрижку</a></li>
+        <li><a href="#promotions">Акции</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Запись на прием</h1>
   
-  <form id="appointmentForm">
-    <label for="name">Имя:</label>
-    <input type="text" id="name" required>
+    <form id="appointmentForm">
+      <label for="name">Имя:</label>
+      <input type="text" id="name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+  
+      <label for="phone">Телефон:</label>
+      <input type="tel" id="phone" required>
+  
+      <label for="date">Дата и время:</label>
+      <input type="datetime-local" id="date" required>
+  
+      <input type="submit" value="Записаться">
+    </form>
+  
+    <script src="zapis.js"></script>
+  </main>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" required>
-
-    <label for="phone">Телефон:</label>
-    <input type="tel" id="phone" required>
-
-    <label for="date">Дата и время:</label>
-    <input type="datetime-local" id="date" required>
-
-    <input type="submit" value="Записаться">
-  </form>
-
-  <script src="zapis.js"></script>
+  <footer>
+    <p>© 2023 Парикмахерская</p>
+  </footer>
 </body>
 </html>
+

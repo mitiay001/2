@@ -47,4 +47,17 @@ body {
     padding: 10px;
     text-align: center;
   }
+ 
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
   
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input[type="submit"] {
+    margin-top: 20px;
+  }  
